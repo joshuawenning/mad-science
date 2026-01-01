@@ -15,4 +15,3 @@ if answer == "y"
 else
   puts "Okay, maybe we'll do that another time."
 end
-
