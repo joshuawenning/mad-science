@@ -12,9 +12,7 @@ def fetch_page(url)
 end
 
 def count_tags(page, tag)
-  pattern = /<#{tag}\b/
-  tags = page.scan(pattern)
-  tags.length
+  page.scan(/<#{tag}\b/).length
 end
 
 sites.each do |url|
