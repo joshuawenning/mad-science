@@ -8,7 +8,7 @@ sites = [
 tags = ["a", "div", "img"]
 
 def fetch_page(url)
-  URI.open(url).read # Implicit return
+  URI.open(url).read
 end
 
 def count_tags(page, tag)
