@@ -91,8 +91,8 @@ vehicles[:alice][:year] #=> 2019
 # Accessing a key in a nonexistent nested hash:
 # `NoMethodError`, `nil` when using #dig
 
-vehicles[:zoe][:year] #=> NoMethodError
-vehicles.dig(:zoe, :year) #=> nil
+# vehicles[:zoe][:year] #=> NoMethodError
+# vehicles.dig(:zoe, :year) #=> nil
 
 # Adding and removing data is just like regular hashes
 
@@ -108,3 +108,13 @@ vehicles[:dave][:color] = "red"
 vehicles.delete(:blake)
 # Delete a key/value pair inside a nested hash
 vehicles[:dave].delete(:color)
+
+# Methods
+puts vehicles.select { |name, data| data[:year] >= 2020 }
+# Using #collect - trying to get just the names of the owners
+puts vehicles.collect { |name, data| name if data[:year] >= 2020 }
+# Chaining the #compact method to prevent initial `nil` return
+puts vehicles.collect { |name, data| name if data[:year] >= 2020 }.compact
+# This works great, but the #filter_map method combines this functionality
+puts vehicles.filter_map { |name, data| name if data[:year] >= 2020 }
+
