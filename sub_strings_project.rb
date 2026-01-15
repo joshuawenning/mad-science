@@ -1,4 +1,19 @@
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+dictionary = [
+  "below",
+  "down",
+  "go",
+  "going",
+  "horn",
+  "how",
+  "howdy",
+  "it",
+  "i",
+  "low",
+  "own",
+  "part",
+  "partner",
+  "sit"
+]
 
 def substrings (string, array)
   hash_matches = array.each_with_object(Hash.new(0)) do |word, hash|

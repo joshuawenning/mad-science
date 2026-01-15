@@ -17,5 +17,5 @@ end
 puts isogram?("Odin")
 
 # Caveat: calling `puts` on anything that is `nil` or an empty string or
-# collection will just print a blank line to your terminal. `p` yields more
-# information adding the #inspect method.
+# collection will just print a blank line to your terminal. `p` yields
+# more information adding the #inspect method.

@@ -31,7 +31,7 @@ end
 # Aggregation Example
 # Def: The container does not own the contained objects; they can
 # exist independently.
-#
+
 # Passengers can exist without `Car`
 passengers = [Passenger.new, Passenger.new]
 

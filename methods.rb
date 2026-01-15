@@ -1,6 +1,6 @@
 # Ruby offers implicit return for methods, without a `return` keyword.
-# This means that the last expression that was evaluated automatically gets
-# returned, like `Joshua` below.
+# This means that the last expression that was evaluated automatically
+# gets returned, like `Joshua` below.
 
 # def my_name
 #   "Joshua"
@@ -8,7 +8,7 @@
 
 # puts my_name
 
-# `name` is the parameter and `"James"` is the argument.
+# `name` is the parameter and "James" is the argument.
 # def greet(name)
 #   "Hello, #{name}!"
 # end
@@ -45,7 +45,6 @@ end
 puts my_name
 
 # Useful example: checks inputs for errors before continuing
-
 def even_odd(number)
   unless number.is_a? Numeric
     return "A number was not entered."
@@ -62,7 +61,6 @@ puts even_odd(20)
 puts even_odd("nope") #=> A number was not entered.
 
 # Difference between puts and return
-
 def return_squared(number)
   number * number
 end

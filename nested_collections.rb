@@ -42,9 +42,7 @@ nested_arrays = Array.new(3) { Array.new(2) }
 
 # Adding and removing elements
 test_scores << [100, 99, 98, 97]
-#=> [[97, 76, 79, 93], [79, 84, 76, 79], [88, 67, 64, 76], [94, 55, 67, 81], [100, 99, 98, 97]]
 test_scores[0].push(100)
-#=> [97, 76, 79, 93, 100]
 
 # Remove elements using #pop
 test_scores.pop #=> [100, 99, 98, 97]
@@ -117,4 +115,3 @@ puts vehicles.collect { |name, data| name if data[:year] >= 2020 }
 puts vehicles.collect { |name, data| name if data[:year] >= 2020 }.compact
 # This works great, but the #filter_map method combines this functionality
 puts vehicles.filter_map { |name, data| name if data[:year] >= 2020 }
-

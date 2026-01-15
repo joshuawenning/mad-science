@@ -39,8 +39,8 @@ fruits.each_with_index { |fruit, index| puts fruit if index.even? }
 
 # Map
 # The #map method (also called #collect) transforms each element from and
-# array according to whatever block you pass to it and returns the transforms
-# elements in a new array.
+# array according to whatever block you pass to it and returns the
+# transforms elements in a new array.
 
 # shouting_at_friends = []
 # friends.each { |friend| shouting_at_friends.push(friend.upcase) }
